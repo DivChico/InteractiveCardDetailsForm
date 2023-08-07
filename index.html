@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="CardApp">
+      <div id="right">
+        <div id="cardFront">
+          <div id="data">
+            <p id="frontCardNumber">0000 0000 0000 0000</p>
+            <div>
+              <span id="frontCardName">Jane Appleseed</span>
+              <span id="frontCardDate"
+                ><span id="mm">00</span>/<span id="yy">00</span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div id="cardBackDiv">
+          <div id="data">
+            <span id="backCardCvc">000</span>
+          </div>
+        </div>
+        <div id="cardBack"></div>
+      </div>
+      <div id="left">
+        <div id="block">
+          <div class="input" id="mainInputDiv">
+            <div class="name">
+              <p id="lable">Cardholder Name</p>
+              <input
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+                id="cardName"
+                class="normalborder"
+                pattern="[a-zA-Z]+ [a-zA-Z]+"
+              />
+              <p class="note"></p>
+            </div>
+            <div class="cardNumber">
+              <p id="lable">Card Number</p>
+              <input
+                type="text"
+                maxlength="16"
+                placeholder="e.g. 1234 5678 9123 0000"
+                id="cardNumber"
+                class="normalborder"
+              />
+              <p class="note"></p>
+            </div>
+            <div class="dateAndCvc">
+              <div class="date">
+                <p id="lable">Exp. Date (MM/YY)</p>
+                <div class="dataInput">
+                  <div>
+                    <input
+                      type="text"
+                      maxlength="2"
+                      placeholder="MM"
+                      id="month"
+                      class="normalborder"
+                    />
+                    <p class="note"></p>
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      maxlength="2"
+                      placeholder="YY"
+                      id="year"
+                      class="normalborder"
+                    />
+                    <p class="note"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="cvc">
+                <p id="lable">CVC</p>
+                <input
+                  type="text"
+                  maxlength="3"
+                  placeholder="e.g. 123"
+                  id="cvcNumber"
+                  class="normalborder"
+                />
+                <p class="note"></p>
+              </div>
+            </div>
+            <button id="Confirm" class="Confirm">Confirm</button>
+          </div>
+          <div id="complete">
+            <img src="images/icon-complete.svg" alt="complete" />
+            <p class="thx">Thank you!</p>
+            <p class="added">We've added your card details</p>
+            <button id="Continue" class="Confirm">Continue</button>
+          </div>
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://github.com/DivChico" target="_blank"
+              >Abdullah hamdy Alatawwna</a
+            >.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

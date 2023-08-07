@@ -1,0 +1,275 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --clr-Red: hsl(0, 100%, 66%);
+  --clr-LinearGradient: linear-gradient(
+    90deg,
+    rgba(100, 72, 254, 1) 0%,
+    rgba(96, 5, 148, 1) 100%
+  );
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-LightGrayishViolet: hsl(270, 3%, 87%);
+  --clr-DarkGrayishViolet: hsl(279, 6%, 55%);
+  --clr-VeryDarkViolet: hsl(278, 68%, 11%);
+  font-size: 18px;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  height: 900px;
+  width: 1440px;
+  margin: 0;
+}
+#CardApp {
+  display: flex;
+  width: 100%;
+}
+#right {
+  background-image: url(../images/bg-main-desktop.png);
+  width: 483px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cardFront,
+#cardBackDiv {
+  height: 245px;
+  width: 447px;
+  position: relative;
+}
+#cardFront {
+  background-image: url(../images/bg-card-front.png);
+  margin-bottom: 30px;
+  left: 100px;
+}
+#cardBackDiv {
+  background-image: url(../images/bg-card-back.png);
+  left: 200px;
+}
+#data {
+  height: 100%;
+  color: var(--clr-White);
+}
+#cardFront #data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+#cardFront #data p:nth-of-type(1) {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 0 30px;
+  text-align: left;
+  letter-spacing: 5px;
+}
+.name,
+.cardNumber,
+.dateAndCvc {
+  margin-bottom: 20px;
+}
+#cardFront #data div {
+  width: 100%;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#cardBackDiv #data {
+  position: relative;
+}
+#cardBackDiv #data span {
+  letter-spacing: 2px;
+
+  position: absolute;
+  right: 50px;
+  top: 119px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+#left {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#block {
+  width: 40%;
+  height: fit-content;
+}
+
+#block .input #lable {
+  margin: 0 0 5px;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--clr-VeryDarkViolet);
+}
+
+#cardName,
+#cardNumber,
+input {
+  width: 100%;
+}
+
+#block .input input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  opacity: 50%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#block .input input:focus {
+  opacity: 100%;
+  outline: 1px solid var(--clr-VeryDarkViolet);
+}
+.note {
+  padding-left: 10px;
+  margin-top: -0.5px;
+  font-size: 0.6rem;
+  color: var(--clr-Red);
+}
+.dateAndCvc {
+  display: flex;
+  margin-bottom: 50px;
+}
+.dataInput {
+  display: flex;
+}
+.dataInput div {
+  margin-right: 10px;
+}
+
+.date {
+  margin-right: 20px;
+}
+.Confirm {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: var(--clr-White);
+  background-color: var(--clr-VeryDarkViolet);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+#complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.thx {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+.added {
+  color: var(--clr-LightGrayishViolet);
+  margin: 0;
+  margin-bottom: 50px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 50px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.normalborder {
+  border: 1px solid var(--clr-LightGrayishViolet);
+}
+.borderred {
+  border: 1px solid var(--clr-Red);
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  #CardApp {
+    flex-direction: column;
+  }
+  #right {
+    background-image: url(../images/bg-main-mobile.png);
+    width: 100%;
+    height: 240px;
+  }
+  #cardFront,
+  #cardBackDiv {
+    height: 245px;
+    width: 447px;
+    position: absolute;
+    scale: 0.5;
+    top: 0;
+    left: 0;
+  }
+  #cardFront {
+    top: 100px;
+    left: -80px;
+    z-index: 5;
+  }
+  #cardBackDiv {
+    top: 0px;
+    left: 0px;
+  }
+  #left {
+    width: 100%;
+    height: 100%;
+  }
+  #block {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
