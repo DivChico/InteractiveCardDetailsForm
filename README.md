@@ -1,6 +1,6 @@
 # Interactive card details form solution
 
-life website [https://divchico.github.io/InteractiveCardDetailsForm/](https://divchico.github.io/InteractiveCardDetailsForm/). 
+live website [https://divchico.github.io/InteractiveCardDetailsForm/](https://divchico.github.io/InteractiveCardDetailsForm/). 
 
 ## Table of contents
 
