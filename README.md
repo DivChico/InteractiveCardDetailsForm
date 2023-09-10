@@ -1,6 +1,6 @@
 # Interactive card details form solution
 
-This is a solution to the [https://divchico.github.io/InteractiveCardDetailsForm/](https://divchico.github.io/InteractiveCardDetailsForm/). Frontend Mentor challenges help you improve your coding skills 
+life website [https://divchico.github.io/InteractiveCardDetailsForm/](https://divchico.github.io/InteractiveCardDetailsForm/). 
 
 ## Table of contents
 
